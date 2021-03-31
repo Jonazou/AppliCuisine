@@ -12,21 +12,32 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class Controller {
-	@FXML private Button test,test2;
+	@FXML private Button test,test2,boutonRetour;
+	
+	public GestionScenes gestion = new GestionScenes();
+	
+	
+	private Stage stage;
+	private Parent parent = null;
 
-
+	
+	@FXML
 	public void changeScene(ActionEvent event) throws IOException {
-		Parent parent = null;
-
-		if(event.getSource()==test) 
-			parent = FXMLLoader.load(getClass().getResource("../resources/test2.fxml"));
+		if(event.getSource()==test)
+			parent = FXMLLoader.load(getClass().getResource(this.gestion.listeScenes[1]));
 
 		else if (event.getSource()==test2)
-			parent = FXMLLoader.load(getClass().getResource("../resources/test.fxml"));
+			parent = FXMLLoader.load(getClass().getResource(this.gestion.listeScenes[0]));
 
-		Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+		stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
 		stage.setScene(new Scene(parent));
-		System.out.println(event.getSource());
-
+	
 	}
+	
+	@FXML
+	public void retourScene(ActionEvent event) throws IOException{
+		return;
+	}
+	
+	
 }
