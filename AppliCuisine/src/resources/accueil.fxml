@@ -7,23 +7,22 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left bottom, #4fb9cb, #197585);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+<AnchorPane style="-fx-background-color: linear-gradient(to left bottom, #4fb9cb, #197585);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
    <children>
-      <Button fx:id="test" layoutX="522.0" layoutY="18.0" mnemonicParsing="false" onAction="#changeScene" text="scene2" />
-      <Button fx:id="boutonRetour" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#retourScene" text="&lt;-" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+      <Button fx:id="test" layoutX="522.0" layoutY="18.0" mnemonicParsing="false" onAction="#changeScene" text="scene2" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="25.200000000000003" AnchorPane.topAnchor="18.0" />
+      <Button fx:id="boutonRetour" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="24.0" layoutY="18.0" mnemonicParsing="false" onAction="#retourScene" text="&lt;-" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="523.2" AnchorPane.topAnchor="18.0">
          <font>
             <Font name="Microsoft YaHei" size="16.0" />
          </font>
       </Button>
-      <TextField layoutX="151.0" layoutY="154.0" />
-      <TextField layoutX="321.0" layoutY="153.0" prefHeight="26.0" prefWidth="94.0" />
-      <Button layoutX="445.0" layoutY="154.0" mnemonicParsing="false" text="Button" />
-      <Text fill="#543f3f" layoutX="236.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU" textAlignment="CENTER" wrappingWidth="126.86643981933594">
+      <TextField layoutX="275.0" layoutY="153.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="230.60000000000002" AnchorPane.topAnchor="153.0" />
+      <TextField layoutX="113.0" layoutY="153.0" prefHeight="26.0" prefWidth="94.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="392.6" AnchorPane.topAnchor="153.0" />
+      <Button layoutX="445.0" layoutY="154.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="228.79999999999998" AnchorPane.leftAnchor="445.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="154.0" />
+      <Text fill="#543f3f" layoutX="236.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU" textAlignment="CENTER" wrappingWidth="126.86643981933594" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="237.13356018066406" AnchorPane.topAnchor="68.578515625">
          <font>
             <Font name="Verdana Bold" size="38.0" />
          </font>
       </Text>
-      <ListView layoutX="200.0" layoutY="200.0" prefHeight="151.0" prefWidth="200.0" />
+      <ListView layoutX="178.0" layoutY="204.0" prefHeight="151.0" prefWidth="200.0" AnchorPane.bottomAnchor="53.19999999999999" AnchorPane.leftAnchor="178.0" AnchorPane.rightAnchor="222.0" />
    </children>
 </AnchorPane>

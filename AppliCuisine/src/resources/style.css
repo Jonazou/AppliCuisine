@@ -1,0 +1,104 @@
+.root{
+	-fx-background-color:radial-gradient(radius 150%,rgb(200, 200, 200),rgb(180,180,180));
+}
+
+.tab-close-button:hover{
+	-fx-background-color:red;
+}
+
+.tab-header-background{
+	-fx-background-color:rgba(160, 238, 228,0.7);
+}
+
+
+.tab-pane{
+	-fx-tab-min-width:50px;
+ 	-fx-tab-max-width:150px;
+  	-fx-tab-min-height:30px;
+ 	-fx-tab-max-height:100px;
+ 	
+}
+
+.tab-label{
+	-fx-background-color:transparent;
+}
+
+.tab:selected{
+	-fx-background-color:rgba(43, 69, 112,0.5);
+}
+
+
+.tab{
+	-fx-background-radius: 2 2 0 0;
+	-fx-background-color:rgba(228, 0, 102,0.3);
+	-fx-font-size:100%;
+	-fx-font-family:Verdana;
+	-fx-font-weight:bold;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: -5px;
+    
+}
+
+.tab:hover{
+	-fx-background-color:rgba(254, 127, 45,0.5);
+	-fx-tab-width:10px;
+	
+	
+}
+
+/* Access the tabs menu itself*/
+.context-menu {
+	-fx-background-radius: 2 2 2 2;
+    -fx-background-color:rgba(0,0,100,0.4);
+    -fx-padding: 10 10 10 10;
+    -fx-text-align:center;
+}
+
+/* Access menu item*/
+.radio-menu-item {
+	-fx-background-radius: 2 2 2 2;
+    -fx-background-color:rgb(100,150,150);
+    
+}
+
+.radio-menu-item:hover {
+	-fx-background-radius: 0 0 0 0;
+    -fx-background-color:rgba(254, 127, 45,0.7);
+
+}
+
+
+
+ /* Access menu item's text*/
+.radio-menu-item .label {
+    -fx-font-family:Verdana;
+	-fx-font-weight:bold;
+	
+}
+
+.radio-menu-item .label:hover {
+    -fx-font-family:Verdana;
+	-fx-font-weight:bold;
+	-fx-color:red;
+	
+}
+
+ /*Access menu item's check sign*/
+.radio {
+    -fx-background-color:rgb(133, 203, 51);
+}
+
+/*Dropdown Button*/
+.tab-down-button{
+	-fx-background-radius: 100 100 100 100;
+}
+
+#newTab{
+	-fx-background-color:rgba(0,190,50,0.5);
+	-fx-background-radius: 100 100 100 100;
+	-fx-padding:2px -15px 0 -15px;
+	-fx-font-size:15px;
+}
+
+

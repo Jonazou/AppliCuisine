@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="main.Controller">
+  <tabs>
+    <Tab text="Tab 1">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </content></Tab>
+    <Tab fx:id="newTab" onSelectionChanged="#addTab" style="font-size: 100px;" text="+" />
+  </tabs>
+</TabPane>
