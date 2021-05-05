@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="640.0" style="-fx-background-color: #83A697;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController2">
+   <children>
+      <MenuBar prefHeight="41.0" prefWidth="640.0" style="-fx-border-color: #FF7F50;">
+         <menus>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <TextField promptText="Recherche par Ingrédients">
+                     <cursor>
+                        <Cursor fx:constant="MOVE" />
+                     </cursor>
+                  </TextField>
+               </graphic>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <TextField alignment="TOP_LEFT" promptText="Recherche par recette" />
+               </graphic>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Group layoutX="44.0" layoutY="85.0" />
+      <VBox layoutX="245.0" layoutY="100.0" prefHeight="216.0" prefWidth="95.0">
+         <children>
+            <Button fx:id="BRecette6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadRecette" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FEF86C;" text="Recette6" textAlignment="CENTER" />
+            <Button fx:id="Brecette5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadRecette" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FEF86C;" text="Recette5" textAlignment="CENTER" />
+            <Button fx:id="Brecette4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadRecette" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FEF86C;" text="Recette4" textAlignment="CENTER" />
+            <Button fx:id="Brecette3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadRecette" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FEF86C;" text="Recette3" textAlignment="CENTER" />
+            <Button fx:id="Brecette2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadRecette" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FEF86C;" text="Recette2" textAlignment="CENTER" />
+            <Button fx:id="Brecette1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadRecette" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FFFF6B;" text="Recette1" textAlignment="CENTER" />
+         </children>
+      </VBox>
+      <Button fx:id="retour" layoutX="561.0" layoutY="455.0" mnemonicParsing="false" onAction="#LoadLastPage" text="Retour" />
+      <Text fx:id="text1" layoutX="76.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</Pane>

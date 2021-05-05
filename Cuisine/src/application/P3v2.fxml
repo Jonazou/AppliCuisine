@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="640.0" style="-fx-background-color: #83A697;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController3">
+   <children>
+      <MenuBar prefHeight="41.0" prefWidth="640.0" style="-fx-border-color: #FF7F50;">
+         <menus>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <TextField promptText="Recherche par Ingrédients">
+                     <cursor>
+                        <Cursor fx:constant="MOVE" />
+                     </cursor>
+                  </TextField>
+               </graphic>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <TextField alignment="TOP_LEFT" promptText="Recherche par recette" />
+               </graphic>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Group layoutX="279.0" layoutY="114.0">
+         <children>
+            <TextArea prefHeight="262.0" prefWidth="298.0" />
+            <Pagination pageCount="5" prefHeight="347.0" prefWidth="298.0" />
+         </children>
+      </Group>
+      <Group layoutX="44.0" layoutY="85.0">
+         <children>
+            <VBox layoutY="-5.0" prefHeight="347.0" prefWidth="176.0" style="-fx-background-color: #FFFF6B;">
+               <children>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="43.0" prefWidth="292.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFF6B;" />
+               </children>
+            </VBox>
+         </children>
+      </Group>
+      <Slider blockIncrement="1.0" layoutX="44.0" layoutY="443.0" majorTickUnit="5.0" max="10.0" minorTickCount="1" prefHeight="43.0" prefWidth="176.0" showTickLabels="true" showTickMarks="true" />
+      <TextArea layoutX="334.0" layoutY="54.0" prefHeight="52.0" prefWidth="189.0" />
+      <Button layoutX="545.0" layoutY="449.0" mnemonicParsing="false" onAction="#LoadLastPage" text="Retour" />
+   </children>
+</Pane>
